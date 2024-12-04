@@ -1,0 +1,113 @@
+ body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #1DB954;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header nav{
+            margin-right: 35px;
+        }
+        header nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            margin-top: 60px;
+            padding: 20px;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url(https://www.elsewhen.com/static/7765c40f743d956791be388e079a99d7/d7d08/case_spotify_dpb_hero_overlay_lg.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 10px 0 20px;
+        }
+        .hero button {
+            background-color: #1DB954;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #17a74a;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background-color: #282828;
+            border-radius: 8px;
+            margin: 10px;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            flex: 0 0 30%;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .card p {
+            font-size: 14px;
+            color: #b3b3b3;
+            margin: 0 10px 10px;
+        }
+        footer {
+            background-color: #282828;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            color: #b3b3b3;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .card {
+                width: 100%;
+            }
+        }
